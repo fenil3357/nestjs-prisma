@@ -1,3 +1,33 @@
+
+## Set up
+
+### 1) Run the mysql container
+
+```
+docker compose up
+```
+
+### 2) Install the dependencies
+
+```
+npm install
+```
+
+### 3) Initialize prisma and run migrations
+
+```
+npx prisma generate
+
+npx prisma migrate deploy
+```
+
+
+### 4) Start the server
+
+```
+npm run start:dev
+```
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
